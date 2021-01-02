@@ -1,0 +1,75 @@
+ package com.company;
+
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+       int n=sc.nextInt();
+       int a[]=new int[n];
+       for(int i=0;i<n;i++)
+       {
+           a[i]=sc.nextInt();
+       }
+       int temp;
+       for(int i=0;i<a.length;i++)
+       {
+           for(int j=i+1;j<a.length;j++)
+           {
+               if(a[i]>a[j])
+               {
+                   temp=a[i];
+                   a[i]=a[j];
+                   a[j]=temp;
+               }
+           }
+       }
+       for(int i=0;i<n;i++)
+       {
+           System.out.println(a[i]);
+       }
+
+
+    }
+}
+
+
+
+
+
+
+
+package com.company;
+
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+       String s=sc.nextLine();
+       char ch[]=s.toCharArray();
+       char temp;
+       for(int i=0;i<ch.length;i++)
+       {
+           for(int j=i+1;j<ch.length;j++)
+           {
+               if(ch[i]>ch[j])
+               {
+                   temp=ch[i];
+                   ch[i]=ch[j];
+                   ch[j]=temp;
+               }
+           }
+       }
+       System.out.println(ch);
+
+    }
+}
+
+
+
+
+
+
+
+
